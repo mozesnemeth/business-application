@@ -1,0 +1,11 @@
+
+.classpath
+.project
+.settings/org.eclipse.jdt.apt.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+target/classes/LicenseDemo.bpmn2
+target/classes/META-INF/kie-deployment-descriptor.xml
+target/classes/META-INF/kmodule.xml
+.classpath
+.project
+.settings/org.eclipse.jdt.core.prefs

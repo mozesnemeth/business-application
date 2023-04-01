@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  evnetus-postgresdb:
+    image: postgres
+    environment:
+      - POSTGRES_INITDB_ARGS="--encoding=UTF8"
+      - POSTGRES_USER=jbpm
+      - POSTGRES_PASSWORD=jbpm
+      - POSTGRES_DB=jbpm
+      - "TZ=Europe/Budapest" # offset +01:00 / DST +02:00
+    volumes:
+      - eventus-postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  eventus-postgres-data:
